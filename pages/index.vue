@@ -139,7 +139,6 @@
 <script setup>
 import { ref } from 'vue'
 
-// --- Title Animation Logic ---
 const titleA = "Developer in TRAINING"
 const titleB = "Keagan Coetzee"
 const currentTitle = ref(titleA)
@@ -164,7 +163,7 @@ const toggleTitle = async () => {
   isAnimating.value = false
 }
 
-// --- API 1: OpenWeather (Pretoria) ---
+// API Weather
 const apiKey = '4ac6aa2f367d198f1c7749c82db9d9b1' 
 const city = 'Pretoria'
 
@@ -173,7 +172,7 @@ const { data: weather, pending, error } = await useFetch(
   { lazy: true, server: false }
 )
 
-// --- API 2: GitHub Statistics ---
+// API Github
 const githubUsername = 'KeaganCoetzee' 
 
 const { data: githubData, pending: githubPending } = await useFetch(
@@ -185,7 +184,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;900&display=swap');
 
-/* Main Page Container */
 .page { 
   display: flex; 
   flex-direction: column; 
@@ -195,7 +193,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
   text-align: center; 
 }
 
-/* Background Shapes */
 .shape { 
   position: absolute; 
   z-index: 0; 
@@ -228,8 +225,7 @@ const { data: githubData, pending: githubPending } = await useFetch(
   33% { transform: translate(15px, -25px) rotate(5deg); } 
   66% { transform: translate(-10px, 15px) rotate(-5deg); } 
 }
-
-/* Typography & Titles */
+  
 .title { 
   font-family: 'Alfa Slab One', serif; 
   cursor: pointer; 
@@ -257,7 +253,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
 
 @keyframes blink { 50% { opacity: 0; } }
 
-/* System UI Blocks */
 .status { 
   border: 3px solid black; 
   box-shadow: 4px 4px 0px black; 
@@ -305,7 +300,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* Profile Box Section */
 .profile-box {
   display: flex; 
   flex-direction: column; 
@@ -382,7 +376,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
   margin-bottom: 8px; 
 }
 
-/* Interactive Pill Design */
 .pill { 
   display: inline-block; 
   padding: 8px 18px; 
@@ -417,7 +410,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
   box-shadow: 5px 5px 0px #990099; 
 }
 
-/* GitHub Information Box */
 .github-box {
   width: 95%; 
   max-width: 1100px; 
@@ -508,7 +500,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
   box-shadow: 8px 8px 0px black; 
 }
 
-/* Marquee / Stripe Animation */
 .stripe { 
   width: 100vw; 
   background: black; 
@@ -538,7 +529,6 @@ const { data: githubData, pending: githubPending } = await useFetch(
   to { transform: translateX(-50%); } 
 }
 
-/* Action Buttons Footer */
 .hero-actions { 
   margin: 60px 0 150px 0; 
   position: relative; 
