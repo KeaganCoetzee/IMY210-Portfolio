@@ -202,11 +202,9 @@
   border-bottom: 4px solid black;
 }
 
-/* New icon styling */
 .project-icon {
   max-width: 120px;
   height: auto;
-  image-rendering: pixelated; /* Keeps that retro look if the images are small */
 }
 
 .card-content {
