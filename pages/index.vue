@@ -1,6 +1,6 @@
 
 <template>
-  /* Keagan Coetzee u25122003 */ 
+ 
   <main class="page">
     <br><br><br><br><br><br><br>
     
@@ -139,6 +139,9 @@
 </template>
 
 <script setup>
+
+   /* Keagan Coetzee u25122003 */ 
+  
 import { ref } from 'vue'
 
 const titleA = "Developer in TRAINING"
