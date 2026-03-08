@@ -1,5 +1,4 @@
 <template>
- 
   <main class="contact-page">
     <h1 class="page-title">/CONTACT</h1>
 
