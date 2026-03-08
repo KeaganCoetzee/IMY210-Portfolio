@@ -1,5 +1,5 @@
 <template>
-  //Keagan Coetzee u25122003
+  
   <main class="projects-section">
     <br><br><br>
     
@@ -84,8 +84,11 @@
 </template>
 
 <style scoped>
+/*Keagan Coetzee u25122003*/
+  
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:wght@400;900&display=swap');
 
+  
 .projects-section {
   display: flex;
   flex-direction: column;
