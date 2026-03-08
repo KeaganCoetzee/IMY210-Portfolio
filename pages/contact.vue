@@ -1,5 +1,5 @@
 <template>
-  //Keagan Coetzee u25122003
+ 
   <main class="contact-page">
     <h1 class="page-title">/CONTACT</h1>
 
@@ -29,6 +29,7 @@
 </template>
 
 <style scoped>
+   /*Keagan Coetzee u25122003*/
 .contact-page {
   padding: 20px;
   display: flex;
