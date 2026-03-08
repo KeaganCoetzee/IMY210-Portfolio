@@ -1,6 +1,6 @@
 
 <template>
-  //Keagan Coetzee u25122003
+  /* Keagan Coetzee u25122003 */ 
   <main class="page">
     <br><br><br><br><br><br><br>
     
